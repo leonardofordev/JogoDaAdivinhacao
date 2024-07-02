@@ -33,11 +33,11 @@ public class JogodaAdivinhacao {
 	        		
 	        		if(numero > numeroAleatorio) {
 	        			System.out.println("O número aleatório é menor;");
-	        			System.out.println("Quantidade de tentativas restantes: " + tentativa);
+	        			System.out.println("Quantidade de tentativas restantes: " + (10 - tentativa));
 	        		}
 	        		else if(numero < numeroAleatorio) {
 	        			System.out.println("O número aleatorio é maior");
-	        			System.out.println("Quantidade de tentativas restantes: " + tentativa);
+	        			System.out.println("Quantidade de tentativas restantes: " + (10 - tentativa));
 	        		}
 	        		
 	        		else {
@@ -55,9 +55,6 @@ public class JogodaAdivinhacao {
 	             System.out.println("Deseja jogar novamente? Digite 1 para continuar ou 0 para sair.");
 	             continuar = entrada.nextInt();
 	        		
-	        	
-	        	
-
 	        	
 	        }while(continuar != 0);
 
